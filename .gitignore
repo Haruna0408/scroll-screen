@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+Thumbs.db
+.sass-cache
+*.css.map
+package-lock.json
+.ftpconfig
+.ftpignore
+.vscode/settings.json

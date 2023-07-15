@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ページの内容を表す文章" />
+
+    <!-- 公開時削除↓↓ -->
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- 公開時削除↑↑ -->
+
+    <!-- URL:正規化 類似ページやPC / SPで異なるURLの場合の記述 ↓↓-->
+    <link rel="canonical" href="https://***/index.html" />
+
+    <!-- title -->
+    <title>インデックス | テンプレート</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css --->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!--- favicon -->
+    <link rel="icon" href="/assets/img/common/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/img/common/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/common/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/common/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/common/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/common/android-chrome-256x256.png"
+      sizes="256x256"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/common/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <!-- /スマホ用アイコン画像 -->
+    <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+
+    <!-- OGP -->
+    <head
+      prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+    ></head>
+    <!-- TOPページの場合-->
+    <meta property="og:url" content="ページのURL//絶対パス" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:type" content="ページのタイプ" />
+    <meta property="og:description" content="記事の抜粋" />
+    <meta property="og:image" content="画像のURL//絶対パス" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="appIDを入力" />
+    <!-- twitter card -->
+    <meta name="twitter:card" content="カード種類" />
+    <meta name="twitter:site" content="@Twitterユーザー名" />
+
+    <!-- Google Analytics Tag head内用-->
+  </head>
+
+  <body>
+    <!-- Google Analytics Tag -body直下用 -->
+
+    <!--/ Loading -->
+    <div id="loading">
+      <div class="p-loading__item"></div>
+      <!-- <p class="p-loading__img"><img src="./assets/img/img_about.png" alt="ローディング画像"></p> -->
+      <p class="p-loading__text">Loading...</p>
+    </div>
+
+    <div class="l-wrapper">
+      <!--/ Header -->
+      <header id="header" class="l-header js-headerTop">
+        <button
+          type="button"
+          class="p-hamburger p-hamburger__button"
+          aria-controls="global-nav"
+          aria-expanded="false"
+        >
+          <span class="p-hamburger__line one"></span>
+          <span class="p-hamburger__line two"></span>
+          <span class="p-hamburger__line three"></span>
+          <span class="p-hamburger__text"></span>
+        </button>
+        <!-- p-hambergermenu /-->
+        <div class="l-header__content l-header__inner">
+          <h1 class="l-header__logo is-active">
+            <a href="/" class="l-header__logoLink">
+              <img src="/assets/img/common/logo.svg" alt="ロゴ" />
+            </a>
+          </h1>
+          <div class="p-nav__area drower" role="navigation">
+            <nav class="p-nav__content">
+              <ul class="p-nav__list">
+                <li class="p-nav__item">
+                  <a href="/" class="p-nav__link">TOP</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="/" class="p-nav__link">会社情報</a>
+                </li>
+                <li class="p-nav__item js-spNavTrigger">
+                  <a href="/service/" class="p-nav__link">サービス</a>
+                  <ul class="p-nav__dropdown__list">
+                    <li class="p-nav__dropdown__item"></li>
+                    <li class="p-nav__dropdown__item">
+                      <a href="/service/" class="l-header__navSpLink"
+                        >サービス TOP</a
+                      >
+                    </li>
+                    <a href="/service/#service01" class="l-header__navSpLink"
+                      >アカウティング事業</a
+                    >
+                    <li class="p-nav__dropdown__item">
+                      <a href="/service/#service02" class="l-header__navSpLink"
+                        >ヒューマンリソース事業</a
+                      >
+                    </li>
+                    <li class="p-nav__dropdown__item">
+                      <a href="/service/#service03" class="l-header__navSpLink"
+                        >ファイナンス事業</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="p-nav__item">
+                  <a href="/#news" class="p-nav__link">お知らせ</a>
+                </li>
+                <li class="p-nav__item">
+                  <a href="/" class="p-nav__link">サイトマップ</a>
+                </li>
+                <li class="p-nav__item p-nav__contact">
+                  <a href="/contact/" class="p-nav__link">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- <div class="p-nav__button _sp js-close_trigger">
+                        <p class="c-button__green">
+                            <span class="c-button__radius c-button__close">メニューを閉じる</span>
+                        </p>
+                    </div> -->
+          </div>
+        </div>
+      </header>
+
+      <!--/ Contents -->
+      <main class="l-main" role="main">
+        <article class="l-article">
+            <div class="item item01">
+                <span>1</span>
+            </div>
+
+            <div class="item item02">
+                <span>2</span>
+            </div>
+
+            <div class="item item03">
+                <span>3</span>
+            </div>
+
+            <div class="area js-area">
+                <div class="wrap js-wrap">
+                    <div class="item item04 js-item">
+                        <span>4</span>
+                    </div>
+
+                    <div class="item item05 js-item">
+                        <span>5</span>
+                    </div>
+
+                    <div class="item item06 js-item">
+                        <span>6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item01">
+                <span>7</span>
+            </div>
+
+            <div class="item item02">
+                <span>8</span>
+            </div>
+
+            <div class="item item03">
+                <span>9</span>
+            </div>
+
+        </article>
+        <!--.l-article /-->
+      </main>
+      <!--.l-main /-->
+      <!-- Contents /-->
+
+      <!--/ Footer -->
+      <footer class="l-footer" role="contentinfo">
+        <div class="l-footer__top"></div>
+        <div class="p-copyright">
+          <p class="p-copyright__text">&copy;&nbsp;2021 Haruna Ishikawa</p>
+        </div>
+        <!--.l-copright /-->
+
+        <ul class="p-floating__list">
+          <li class="p-floating__item">
+            <a
+              href="#"
+              class="c-button__base c-icon__contact p-floating__button"
+            ></a>
+          </li>
+        </ul>
+        <!-- .p-floating /-->
+        <div class="p-pagetop">
+          <a href="#" class="p-pagetop__link">
+            <img
+              src="/assets/img/common/icon_pagetop.png"
+              width=""
+              height=""
+              loading="lazy"
+              alt="ページトップへ戻る"
+            />
+          </a>
+        </div>
+        <!-- .p-pagetop /-->
+      </footer>
+      <!--.l-footer /-->
+      <!-- Footer /-->
+    </div>
+    <!--.l-wrapper /-->
+
+    <!--deferとasyncを記述していない際のjsの位置-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- GSAP -->
+  </body>
+</html>
