@@ -94,131 +94,53 @@
   <body>
     <!-- Google Analytics Tag -body直下用 -->
 
-    <!--/ Loading -->
-    <div id="loading">
-      <div class="p-loading__item"></div>
-      <!-- <p class="p-loading__img"><img src="./assets/img/img_about.png" alt="ローディング画像"></p> -->
-      <p class="p-loading__text">Loading...</p>
-    </div>
-
     <div class="l-wrapper">
       <!--/ Header -->
-      <header id="header" class="l-header js-headerTop">
-        <button
-          type="button"
-          class="p-hamburger p-hamburger__button"
-          aria-controls="global-nav"
-          aria-expanded="false"
-        >
-          <span class="p-hamburger__line one"></span>
-          <span class="p-hamburger__line two"></span>
-          <span class="p-hamburger__line three"></span>
-          <span class="p-hamburger__text"></span>
-        </button>
-        <!-- p-hambergermenu /-->
-        <div class="l-header__content l-header__inner">
-          <h1 class="l-header__logo is-active">
-            <a href="/" class="l-header__logoLink">
-              <img src="/assets/img/common/logo.svg" alt="ロゴ" />
-            </a>
-          </h1>
-          <div class="p-nav__area drower" role="navigation">
-            <nav class="p-nav__content">
-              <ul class="p-nav__list">
-                <li class="p-nav__item">
-                  <a href="/" class="p-nav__link">TOP</a>
-                </li>
-                <li class="p-nav__item">
-                  <a href="/" class="p-nav__link">会社情報</a>
-                </li>
-                <li class="p-nav__item js-spNavTrigger">
-                  <a href="/service/" class="p-nav__link">サービス</a>
-                  <ul class="p-nav__dropdown__list">
-                    <li class="p-nav__dropdown__item"></li>
-                    <li class="p-nav__dropdown__item">
-                      <a href="/service/" class="l-header__navSpLink"
-                        >サービス TOP</a
-                      >
-                    </li>
-                    <a href="/service/#service01" class="l-header__navSpLink"
-                      >アカウティング事業</a
-                    >
-                    <li class="p-nav__dropdown__item">
-                      <a href="/service/#service02" class="l-header__navSpLink"
-                        >ヒューマンリソース事業</a
-                      >
-                    </li>
-                    <li class="p-nav__dropdown__item">
-                      <a href="/service/#service03" class="l-header__navSpLink"
-                        >ファイナンス事業</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="p-nav__item">
-                  <a href="/#news" class="p-nav__link">お知らせ</a>
-                </li>
-                <li class="p-nav__item">
-                  <a href="/" class="p-nav__link">サイトマップ</a>
-                </li>
-                <li class="p-nav__item p-nav__contact">
-                  <a href="/contact/" class="p-nav__link">お問い合わせ</a>
-                </li>
-              </ul>
-            </nav>
-
-            <!-- <div class="p-nav__button _sp js-close_trigger">
-                        <p class="c-button__green">
-                            <span class="c-button__radius c-button__close">メニューを閉じる</span>
-                        </p>
-                    </div> -->
-          </div>
-        </div>
-      </header>
+      <header id="header" class="l-header js-headerTop"></header>
 
       <!--/ Contents -->
       <main class="l-main" role="main">
         <article class="l-article">
-            <div class="item item01">
-                <span>1</span>
+          <section class="item item01">
+            <span>1</span>
+          </section>
+
+          <section class="item item02">
+            <span>2</span>
+          </section>
+
+          <section class="item item03">
+            <span>3</span>
+          </section>
+
+          <section class="scroll__area js-scroll__area">
+            <h1>title</h1>
+            <div class="scroll__wrap js-scroll__wrap">
+              <div class="item item04 js-scroll__item">
+                <span>4</span>
+              </div>
+
+              <div class="item item05 js-scroll__item">
+                <span>5</span>
+              </div>
+
+              <div class="item item06 js-scroll__item">
+                <span>6</span>
+              </div>
             </div>
+          </section>
 
-            <div class="item item02">
-                <span>2</span>
-            </div>
+          <section class="item item01">
+            <span>7</span>
+          </section>
 
-            <div class="item item03">
-                <span>3</span>
-            </div>
+          <section class="item item02">
+            <span>8</span>
+          </section>
 
-            <div class="area js-area">
-                <div class="wrap js-wrap">
-                    <div class="item item04 js-item">
-                        <span>4</span>
-                    </div>
-
-                    <div class="item item05 js-item">
-                        <span>5</span>
-                    </div>
-
-                    <div class="item item06 js-item">
-                        <span>6</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item item01">
-                <span>7</span>
-            </div>
-
-            <div class="item item02">
-                <span>8</span>
-            </div>
-
-            <div class="item item03">
-                <span>9</span>
-            </div>
-
+          <section class="item item03">
+            <span>9</span>
+          </section>
         </article>
         <!--.l-article /-->
       </main>
@@ -226,35 +148,7 @@
       <!-- Contents /-->
 
       <!--/ Footer -->
-      <footer class="l-footer" role="contentinfo">
-        <div class="l-footer__top"></div>
-        <div class="p-copyright">
-          <p class="p-copyright__text">&copy;&nbsp;2021 Haruna Ishikawa</p>
-        </div>
-        <!--.l-copright /-->
-
-        <ul class="p-floating__list">
-          <li class="p-floating__item">
-            <a
-              href="#"
-              class="c-button__base c-icon__contact p-floating__button"
-            ></a>
-          </li>
-        </ul>
-        <!-- .p-floating /-->
-        <div class="p-pagetop">
-          <a href="#" class="p-pagetop__link">
-            <img
-              src="/assets/img/common/icon_pagetop.png"
-              width=""
-              height=""
-              loading="lazy"
-              alt="ページトップへ戻る"
-            />
-          </a>
-        </div>
-        <!-- .p-pagetop /-->
-      </footer>
+      <footer class="l-footer" role="contentinfo"></footer>
       <!--.l-footer /-->
       <!-- Footer /-->
     </div>
@@ -263,6 +157,6 @@
     <!--deferとasyncを記述していない際のjsの位置-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <!-- GSAP -->
+    <script src="/assets/js/scroll.js"></script>
   </body>
 </html>
