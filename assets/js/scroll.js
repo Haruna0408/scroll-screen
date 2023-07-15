@@ -31,3 +31,6 @@ window.addEventListener("load", function () {
     },
   });
 });
+
+//gsap以外にも「Locomotive Scroll」で横スクロール（ページ内リンクも可能）で動かせる
+//「Locomotive Scroll」：スクロールに伴い要素をアニメーション表示させたり、パララックスエフェクトを簡単に実装できるライブラリ
